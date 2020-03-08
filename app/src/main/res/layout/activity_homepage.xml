@@ -51,7 +51,7 @@
             android:orientation="horizontal">
 
             <Button
-                android:id="@+id/Make Offer"
+                android:id="@+id/MakeOffer"
                 android:layout_width="165dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"

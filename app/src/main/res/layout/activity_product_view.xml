@@ -30,7 +30,7 @@
                 android:layout_height="51dp"
                 android:fontFamily="@font/work_sans_bold"
                 android:text="Appliques Cocktail Dress"
-                android:textSize="28" />
+                 />
 
             <TextView
                 android:id="@+id/Postingtime"
@@ -107,14 +107,7 @@
             <CalendarView
                 android:id="@+id/calendarView"
                 android:layout_width="404dp"
-                android:layout_height="wrap_content" />
-
-            <TextView
-                android:id="@+id/RentalDuration"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/work_sans_semibold"
-                android:text="Rental Duration" />
+                android:layout_height="343dp" />
 
             <SeekBar
                 android:id="@+id/seekBar"

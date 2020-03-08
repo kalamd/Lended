@@ -23,7 +23,6 @@ public class product_view extends AppCompatActivity {
     private TextView Brand;
     private TextView Description;
     private TextView Availability;
-    private TextView RentalDuration;
     private CalendarView calendarView;
     private Button Borrow;
     private TextView Price;
@@ -45,22 +44,27 @@ public class product_view extends AppCompatActivity {
         Brand = (TextView)findViewById(R.id.Brand);
         Description = (TextView)findViewById(R.id.Description);
         Availability = (TextView)findViewById(R.id.Availability);
-        RentalDuration = (TextView)findViewById(R.id.RentalDuration);
         calendarView = (CalendarView)findViewById(R.id.calendarView);
         Borrow = (Button)findViewById(R.id.Borrow);
-        Price = *
+        Price = (TextView)findViewById(R.id.Price);
 
         //GET INFO FROM DATABASE
         ItemName.setText("Tester Item");
         PostingTime.setText("Posted 5 hours ago");
+        Brand.setText("Jimmy Choo");
+        Description.setText("Description:\n"+ "This item is for borrowing.");
+        Availability.setText("Item is available from:"+ "June 4th - June 10th");
+        Price.setText("$25.00");
 
         //LoginButton.setOnClickListener(new View.OnClickListener(
         MakeOffer.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                //checkout item idk
             }
         });
+
+
 
     }
 }
