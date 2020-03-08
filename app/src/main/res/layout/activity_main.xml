@@ -7,124 +7,93 @@
     android:layout_height="match_parent"
     android:paddingTop="?attr/actionBarSize">
 
-    <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:id="@+id/nav_view"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="0dp"
-        android:layout_marginEnd="0dp"
-        android:background="?android:attr/windowBackground"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:menu="@menu/bottom_nav_menu" />
-
     <fragment
         android:id="@+id/nav_host_fragment"
         android:name="androidx.navigation.fragment.NavHostFragment"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         app:defaultNavHost="true"
-        app:layout_constraintBottom_toTopOf="@id/nav_view"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0"
         app:navGraph="@navigation/mobile_navigation" />
 
     <EditText
         android:id="@+id/UsernameIN"
         android:layout_width="259dp"
         android:layout_height="46dp"
-        android:layout_marginStart="76dp"
-        android:layout_marginTop="351dp"
-        android:layout_marginBottom="278dp"
         android:ems="10"
         android:hint="Username"
         android:inputType="textPersonName"
         android:visibility="visible"
         app:layout_constraintBottom_toBottomOf="@+id/nav_host_fragment"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintEnd_toEndOf="@id/nav_host_fragment"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/nav_host_fragment"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.636" />
 
     <EditText
         android:id="@+id/Password"
         android:layout_width="258dp"
         android:layout_height="49dp"
-        android:layout_marginStart="77dp"
-        android:layout_marginTop="410dp"
-        android:layout_marginEnd="77dp"
-        android:layout_marginBottom="216dp"
         android:ems="10"
         android:hint="Password"
         android:inputType="textPassword"
         android:password="true"
-        app:layout_constraintBottom_toBottomOf="@+id/nav_host_fragment"
-        app:layout_constraintEnd_toEndOf="@+id/nav_host_fragment"
-        app:layout_constraintStart_toStartOf="@+id/nav_host_fragment"
-        app:layout_constraintTop_toTopOf="@+id/nav_host_fragment" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/UsernameIN"
+        app:layout_constraintVertical_bias="0.171" />
 
     <TextView
         android:id="@+id/LoginDirections"
         android:layout_width="158dp"
         android:layout_height="26dp"
-        android:layout_marginStart="126dp"
-        android:layout_marginTop="302dp"
-        android:layout_marginEnd="127dp"
-        android:layout_marginBottom="347dp"
         android:fontFamily="@font/antic"
         android:text="Log In or Sign Up!"
         android:textAlignment="center"
-        app:layout_constraintBottom_toBottomOf="@+id/nav_host_fragment"
-        app:layout_constraintEnd_toEndOf="@+id/nav_host_fragment"
-        app:layout_constraintStart_toStartOf="@+id/nav_host_fragment"
-        app:layout_constraintTop_toTopOf="@+id/nav_host_fragment" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.55" />
 
     <Button
         android:id="@+id/LoginButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="162dp"
-        android:layout_marginTop="492dp"
-        android:layout_marginEnd="162dp"
-        android:layout_marginBottom="135dp"
         android:text="Lets Go!"
         app:layout_constraintBottom_toBottomOf="@+id/nav_host_fragment"
-        app:layout_constraintEnd_toEndOf="@+id/nav_host_fragment"
-        app:layout_constraintStart_toStartOf="@+id/nav_host_fragment"
-        app:layout_constraintTop_toTopOf="@+id/nav_host_fragment" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.895" />
 
     <ImageView
         android:id="@+id/HomeImage"
-        android:layout_width="149dp"
-        android:layout_height="135dp"
-        android:layout_marginStart="131dp"
-        android:layout_marginTop="139dp"
+        android:layout_width="150dp"
+        android:layout_height="130dp"
         app:layout_constraintBottom_toTopOf="@+id/LoginDirections"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/nav_host_fragment"
+        app:layout_constraintHorizontal_bias="0.507"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/nav_host_fragment"
-        app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@android:drawable/btn_star_big_on" />
 
     <TextView
         android:id="@+id/WelcomeText"
-        android:layout_width="309dp"
-        android:layout_height="56dp"
-        android:layout_marginStart="51dp"
-        android:layout_marginTop="47dp"
-        android:layout_marginEnd="51dp"
-        android:layout_marginBottom="572dp"
+        android:layout_width="326dp"
+        android:layout_height="62dp"
         android:text="Welcome to Lended!"
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
-        app:layout_constraintBottom_toBottomOf="@+id/nav_host_fragment"
-        app:layout_constraintEnd_toEndOf="@+id/nav_host_fragment"
-        app:layout_constraintStart_toStartOf="@+id/nav_host_fragment"
-        app:layout_constraintTop_toTopOf="@+id/nav_host_fragment" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.050000012" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
