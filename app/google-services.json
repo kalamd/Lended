@@ -1,5 +1,7 @@
 {
   "project_info": {
+
+
     "project_number": "93073206221",
     "firebase_url": "https://lended-8f59c.firebaseio.com",
     "project_id": "lended-8f59c",
@@ -8,6 +10,7 @@
   "client": [
     {
       "client_info": {
+
         "mobilesdk_app_id": "1:93073206221:android:8acb97767cca08c9357284",
         "android_client_info": {
           "package_name": "com.example.lended"
@@ -15,6 +18,7 @@
       },
       "oauth_client": [
         {
+
           "client_id": "93073206221-ujltke24qd7klhqhg10im2e9fcgcfafn.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
@@ -29,6 +33,7 @@
       ],
       "api_key": [
         {
+
           "current_key": "AIzaSyASRnoTVar0deZMpHUOCtQEqqYkUYeGdIE"
         }
       ],
@@ -36,6 +41,7 @@
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
+
               "client_id": "93073206221-5obd38hgo2hod6a287m5v1ckj4nkhbq5.apps.googleusercontent.com",
               "client_type": 3
             }

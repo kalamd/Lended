@@ -37,6 +37,9 @@ import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
 
+import java.util.Collection;
+
+
 
 
 public class MainActivity extends AppCompatActivity{
@@ -153,6 +156,7 @@ public class MainActivity extends AppCompatActivity{
         Intent signInIntent = mGoogleSignInClient.getSignInIntent();
         startActivityForResult(signInIntent, 101);
     }
+
 
     private void signOut() {
         // Firebase sign out
