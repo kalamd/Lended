@@ -16,6 +16,9 @@ import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
 
+import java.util.Collection;
+
+
 
 public class MainActivity extends AppCompatActivity {
 
@@ -52,14 +55,14 @@ public class MainActivity extends AppCompatActivity {
 
 
     }
-
+    
+            
     private void checkUser(String username, String password)
     {
-        //if username in database
-        //{
-        //check password matches
+
         Intent intent = new Intent(MainActivity.this, Homepage.class);
         startActivity(intent);
+
         //}
         //else: add to db
     }

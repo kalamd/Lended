@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "76524273118",
+    "firebase_url": "https://lended-b8619.firebaseio.com",
+    "project_id": "lended-b8619",
+    "storage_bucket": "lended-b8619.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:76524273118:android:3d936fb5d3044279bc314f",
+        "android_client_info": {
+          "package_name": "com.example.lended"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "76524273118-surg1b4no0ge6i2sbg6q16jk6co87emn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCjNF9Js316ieUGvn5EgOc6TMYRCaxZMKE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "76524273118-surg1b4no0ge6i2sbg6q16jk6co87emn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
