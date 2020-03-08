@@ -29,8 +29,13 @@
                 android:layout_width="358dp"
                 android:layout_height="51dp"
                 android:fontFamily="@font/work_sans_bold"
+<<<<<<< HEAD
                 android:text="Appliques Cocktail Dress"
                  />
+=======
+                android:textSize="28sp"
+                tools:text="Appliques Cocktail Dress" />
+>>>>>>> 0b9e6c78294cb76034910e5af353fa09441796da
 
             <TextView
                 android:id="@+id/Postingtime"
