@@ -29,8 +29,8 @@
                 android:layout_width="358dp"
                 android:layout_height="51dp"
                 android:fontFamily="@font/work_sans_bold"
-                android:text="Appliques Cocktail Dress"
-                android:textSize="28" />
+                android:textSize="28sp"
+                tools:text="Appliques Cocktail Dress" />
 
             <TextView
                 android:id="@+id/textView3"
