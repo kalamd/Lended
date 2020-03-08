@@ -1,6 +1,8 @@
 package com.example.lended;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
@@ -14,31 +16,52 @@ import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
 
+
 public class MainActivity extends AppCompatActivity {
+
+
+    private EditText UsernameIn;
+    private EditText Password;
+    private TextView LoginDirections;
+    private Button LoginButton;
+    private ImageView HomeImage;
+    private TextView WelcomeText;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-
-        EditText UsernameIn;
-        EditText Password;
-        TextView LoginDirections;
-        Button LoginButton;
-        ImageView HomeImage;
-        TextView WelcomeText;
-
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        BottomNavigationView navView = findViewById(R.id.nav_view);
-        // Passing each menu ID as a set of Ids because each
-        // menu should be considered as top level destinations.
-        AppBarConfiguration appBarConfiguration = new AppBarConfiguration.Builder(
-                R.id.navigation_home, R.id.navigation_dashboard, R.id.navigation_notifications)
-                .build();
-        NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment);
-        NavigationUI.setupActionBarWithNavController(this, navController, appBarConfiguration);
-        NavigationUI.setupWithNavController(navView, navController);
+
+        UsernameIn = (EditText)findViewById(R.id.UsernameIN);
+        Password = (EditText)findViewById(R.id.Password);
+        LoginButton = (Button)findViewById(R.id.LoginButton);
+        LoginDirections = (TextView) findViewById(R.id.LoginDirections);
+        HomeImage = (ImageView)findViewById(R.id.HomeImage);
 
 
+        LoginButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                checkUser(UsernameIn.getText().toString() , Password.getText().toString());
+
+            }
+        });
+
+
+
+
+
+    }
+
+    private void checkUser(String username, String password)
+    {
+        //if username in database
+        //{
+        //check password matches
+        Intent intent = new Intent(MainActivity.this, Homepage.class);
+        startActivity(intent);
+        //}
+        //else: add to db
     }
 
 }
